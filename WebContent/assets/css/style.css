@@ -1,0 +1,132 @@
+/* .alerts { */
+  /* position: absolute; */
+  /* top: 30px; */
+  /* left: 20px; */
+  /* right: 20px; */
+/* } */
+
+@media (min-width: 767px) {
+    .navbar-nav .dropdown-menu .caret {
+	transform: rotate(-90deg);
+    }
+}
+
+.list-group-item-menu
+{
+  overflow:hidden;  
+  position: relative;
+  display: block;
+  padding: 5px 15px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.top-buffer
+{
+	margin-top : 50px;
+}
+
+.announce-content {
+	background-color : #FBF2B7;
+	padding : 20px;
+	border-radius : 10px 50px 0px 0px;
+}
+
+.announce-notation {
+	background-color : #FFCB60;
+	padding : 20px;
+	border-radius : 0px 0px 50px 10px;
+}
+
+.announce-productor {
+	background-color : #B0E0E6;
+	padding : 20px;
+	border-radius : 10px 50px 30px 5px;
+}
+.announce-get-button {
+	background-color : transparent;
+}
+.panel {
+	border : 0px;
+}
+
+html,body {
+	background-color : #fff;
+}
+
+.alert {
+	position : fixed;
+	width : auto;
+	margin: auto;
+}
+
+.container-padding-top {
+	padding-top : 50px;
+}
+
+.form-error {
+	border-radius : 5px;
+	border: #FF0000 1px solid;
+}
+
+.red-notation {
+	color : red;
+	font-size : 20px;
+}
+
+.green-notation {
+	color : green;
+	font-size : 20px;
+}
+
+.hiddenRow {
+	padding : 0 !important;
+	margin : 0 !important;
+}
+
+.bot-border {
+	border-bottom:1px #f8f8f8 solid;
+	margin:5px 0  5px 0
+}
+
+.productor-notation {
+	background-color : #D3D3D3;
+	padding : 20px;
+}
+
+.ui-datepicker .ui-datepicker-title select {
+    color: #000;
+}
+
+#actionMenu {
+	display:none;
+}
+
+#reservationShow:hover #actionMenu {
+		display:block;
+}
+
+.fixActionMenu {
+	width : 30%;
+}
+#reservationShow {
+	height : 50px;
+}
+
+.bg-lightgray
+{
+    background-color:LightGray;
+}
+.favorite {
+ font-size:25px;
+ color:#cc0000;
+}	
+
+.share-buttons img {
+width: 35px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+}

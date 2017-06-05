@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+ <display-name>BioShareDAO</display-name>
+ <welcome-file-list>
+ <welcome-file>Home.jsp</welcome-file>
+ </welcome-file-list>
+ <servlet>
+ <description></description>
+ <display-name>ProductController</display-name>
+ <servlet-name>ProductController</servlet-name>
+ <servlet-class>com.bioshare.controller.ProductController</servlet-class>
+ </servlet>
+  <servlet>
+ <description></description>
+ <display-name>ProductTypesController</display-name>
+ <servlet-name>ProductTypesController</servlet-name>
+ <servlet-class>com.bioshare.controller.ProductTypesController</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>ProductController</servlet-name>
+ <url-pattern>/ProductController</url-pattern>
+ </servlet-mapping>
+ 
+    <servlet> 
+      <servlet-name>Jersey RESTful Application</servlet-name> 
+      <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class> 
+      <init-param> 
+         <param-name>jersey.config.server.provider.packages</param-name> 
+         <param-value>com.bioshare.webservice</param-value> 
+      </init-param> 
+   </servlet> 
+   <servlet-mapping> 
+      <servlet-name>Jersey RESTful Application</servlet-name> 
+      <url-pattern>/rest/*</url-pattern> 
+   </servlet-mapping>   
+ 
+  <servlet-mapping>
+ <servlet-name>ProductController</servlet-name>
+ <url-pattern>/new</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+ <servlet-name>ProductTypesController</servlet-name>
+ <url-pattern>/GetProductTypes</url-pattern>
+</servlet-mapping>
+ </web-app>
